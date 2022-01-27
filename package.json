@@ -1,0 +1,27 @@
+{
+  "name": "node-cli-game",
+  "version": "1.0.0",
+  "description": "CLI game sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannywo/Node-CLI-Game.git"
+  },
+  "author": "Dannywo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannywo/Node-CLI-Game/issues"
+  },
+  "homepage": "https://github.com/dannywo/Node-CLI-Game#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  }
+}
