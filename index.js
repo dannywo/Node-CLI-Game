@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
 import inquirer from 'inquirer';
-// import gradient from 'gradient';
+// import gradient from 'gradient-string';
 import chalkAnimation from 'chalk-animation';
 import figlet from 'figlet';
 import { createSpinner } from 'nanospinner';
+import gradient from 'gradient-string';
 
 console.log(chalk.bgCyan('Hi Zayn!'));
 
@@ -72,5 +73,16 @@ async function handleAnswer(isCorrect) {
     }
 }
 
-// await welcome();
+function winner() {
+    console.clear();
+    const msg = `Congrats, ${playerName}! \n $ 1 , 0 0 0 , 0 0 0`
+
+    figlet(msg, (err, data) => {
+        console.log(gradient.pastel.multiline(data))
+    })
+}
+
+await welcome();
 await askName();
+await question_1();
+winner();
